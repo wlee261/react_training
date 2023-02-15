@@ -1,0 +1,62 @@
+.todo {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.todo-task {
+  width: 70%;
+  background-color: white;
+  font-family: "Helvetica Neue";
+}
+
+.reading {
+  border: 0;
+}
+
+.editing {
+  background-color: rgb(224, 221, 221);
+}
+
+.reading:read-only:focus {
+  outline: none;
+}
+
+.todo-actions {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  gap: 0.5rem;
+}
+
+.todo-edit {
+  padding: 0.3rem;
+  width: 30%;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(125, 204, 228);
+  word-break: break-all;
+}
+
+.todo-edit:hover {
+  background-color: rgb(83, 192, 226);
+  cursor: pointer;
+}
+
+.todo-delete {
+  padding: 0.3rem;
+  width: 30%;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(225, 143, 143);
+  word-break: break-all;
+}
+
+.todo-delete:hover {
+  background-color: aliceblue;
+  cursor: pointer;
+  background-color: rgb(206, 83, 83);
+}

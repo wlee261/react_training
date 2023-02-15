@@ -1,0 +1,38 @@
+:root {
+  --tan: #e6e2d3;
+  --white: #f0f0f0;
+  --yello: #4caf50;
+  --red: #c94c4c;
+  --blue: #008cba;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.app {
+  text-align: center;
+  padding: 3rem;
+  margin-top: 3rem;
+  background-color: white;
+  width: 90%;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+  border-radius: 10px;
+  min-width: 1000px;
+}
+
+.dark {
+  background-color: black;
+}
