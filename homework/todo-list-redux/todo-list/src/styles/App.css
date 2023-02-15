@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+.todo--container-light {
+  border: yellow solid 5px;
+}
+
+.todo--container-dark {
+  border: darkblue solid 5px;
+}
