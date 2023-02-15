@@ -1,0 +1,23 @@
+.todo-input {
+  padding-bottom: 1rem;
+}
+
+.input-box {
+  width: 60%;
+  padding: 1rem;
+  border: 1px solid rgb(204, 204, 204);
+  box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+  border-radius: 10px;
+}
+
+.input-button {
+  padding: 1rem;
+  border: 1px solid rgb(204, 204, 204);
+  box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+  border-radius: 10px;
+}
+
+.input-button:hover {
+  background-color: aliceblue;
+  cursor: pointer;
+}
