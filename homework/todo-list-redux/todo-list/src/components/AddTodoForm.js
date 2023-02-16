@@ -16,7 +16,7 @@ const AddTodoForm = () => {
         }
         dispatch(addTodo({
             todoText: addTodoValue,
-            checked: false,
+            completed: false,
             id: uuid(),
         }))
         setAddTodoValue("");

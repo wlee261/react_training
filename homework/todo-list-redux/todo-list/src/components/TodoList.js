@@ -10,7 +10,7 @@ const TodoList = () => {
         <div>
             <h1>Todo List</h1>
             {todos.map((todo) => {
-                return <Todo todoText={todo.todoText} isChecked={todo.checked} id={todo.id} />
+                return <Todo todoText={todo.todoText} isCompleted={todo.completed} id={todo.id} />
             })}
         </div>
     )

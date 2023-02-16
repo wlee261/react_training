@@ -1,16 +1,16 @@
 import '../styles/Todo.css';
 import React from 'react';
-import { toggleIsChecked, deleteTodo } from '../store/slices/todoSlice';
+import { toggleIsCompleted, deleteTodo } from '../store/slices/todoSlice';
 import { useDispatch, useSelector } from 'react-redux';
 
 
-const Todo = ({ todoText, isChecked, id }) => {
+const Todo = ({ todoText, isCompleted, id }) => {
     const dispatch = useDispatch();
     const theme = useSelector(state => state.theme);
 
     const handleCheckBox = () => {
         //console.log(id);
-        dispatch(toggleIsChecked(id));
+        dispatch(toggleIsCompleted(id));
     }
 
     const handleDeleteButton = () => {
@@ -19,8 +19,8 @@ const Todo = ({ todoText, isChecked, id }) => {
 
     return(
         <div className={theme === "light" ? "todo--item-light" : "todo--item-dark"}>
-            {isChecked ? <strike><h5 className="todo--item-children todo--item-text">{todoText}</h5></strike> : <h5 className="todo--item-children todo--item-text">{todoText}</h5>}
-            <input className="todo--item-children todo--item-checkbox" type="checkbox" value={isChecked} onChange={handleCheckBox} />
+            {isCompleted ? <strike><h5 className="todo--item-children todo--item-text">{todoText}</h5></strike> : <h5 className="todo--item-children todo--item-text">{todoText}</h5>}
+            <input className="todo--item-children todo--item-checkbox" type="checkbox" value={isCompleted} onChange={handleCheckBox} checked={isCompleted}/>
             <button className="todo--item-children todo--item-deletebtn" onClick={handleDeleteButton}>Delete</button>
         </div>
     )
